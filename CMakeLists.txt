@@ -17,6 +17,12 @@ qt_add_qml_module(appAppIconAdder
     VERSION 1.0
     QML_FILES
         Main.qml
+        QML_FILES StyleButton.qml
+        SOURCES manager.h manager.cpp
+        QML_FILES SelectApplication.qml
+        QML_FILES SelectIcon.qml
+        QML_FILES FinalPage.qml
+        QML_FILES IconButton.qml
 )
 
 # Qt for iOS sets MACOSX_BUNDLE_GUI_IDENTIFIER automatically since Qt 6.1.
