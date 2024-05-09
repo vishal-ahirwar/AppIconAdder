@@ -19,7 +19,20 @@ Window {
         StackView
         {
             id:stackView
-            initialItem: SelectApplication{anchors.centerIn: parent}
+            initialItem: SelectApplication{}
             anchors.centerIn: parent
+        }
+
+        StyleButton
+        {
+            anchors.bottom: parent.bottom
+            anchors.horizontalCenter: parent.horizontalCenter
+            anchors.margins: 55
+            btnText: "Back"
+            isEnabled: stackView.depth
+            onOnBtnClicked:
+            {
+                stackView.pop()
+            }
         }
 }

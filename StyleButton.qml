@@ -2,6 +2,7 @@ import QtQuick
  import QtQuick.Controls
 Item {
     required property string btnText
+    property bool isEnabled: true
     signal onBtnClicked
     Button
     {
@@ -10,6 +11,7 @@ Item {
         width:271
         height:75
         anchors.centerIn: parent
+        enabled: isEnabled
         contentItem:
             Text
             {
